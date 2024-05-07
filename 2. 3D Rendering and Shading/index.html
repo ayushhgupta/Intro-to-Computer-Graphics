@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="shapes.js"></script>
+  </head>
+
+  <body onload="webGLStart();">
+    <div style="display: flex; max-width: 60%;">
+    <canvas
+      id="canvas1"
+      style="border: none"
+      width="1200"
+      height="400"
+    ></canvas>
+    </div>
+    
+    <div style="display: flex; align-content: flex-start; justify-content: center; max-width: 80%;">
+        <div style="padding-left: 20mm; padding-right: 20mm;">
+            <h2>Per-Face Shading</h2>
+        </div>
+        <div style="padding-left: 10mm; padding-right: 15mm;">
+            <h2>Gouraud Shading (Per-Vertex)</h2>
+        </div>
+        <div style="padding-left: 15mm; padding-right: 0mm;">
+            <h2>Phong Shading (Per-Fragment)</h2>
+        </div>
+    </div>
+
+    <br />
+    <div class="sliders">
+      <label for="slider">Control Light Position</label>
+      <input
+        autocomplete="off"
+        type="range"
+        min="-75"
+        max="75"
+        value="30"
+        step="0.1"
+        id="lightSlider"
+        style="width: 300px;"
+      />
+    </div>
+
+    <div class="sliders">
+      <label for="slider">Control Camera Zoom</label>
+      <input
+        autocomplete="off"
+        type="range"
+        min="0.5"
+        max="12.0"
+        value="2"
+        step="0.1"
+        id="zoomSlider"
+        style="width: 300px;"
+      />
+    </div>
+  </body>
+</html>

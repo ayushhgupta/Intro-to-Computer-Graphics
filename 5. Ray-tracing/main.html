@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Assignment 5</title>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <script type="text/javascript" src="glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="sourceFile.js"></script>
+  </head>
+
+  <body onload="webGLStart();">
+    <div style="display: flex; align-items: left; justify-content: center;">
+      <div style="line-height: 0.7; padding-left: 3mm; padding-right: 3mm; padding-bottom: 3mm; padding-top: 3mm; border: 2px solid black; background-color: rgb(182, 208, 222);">
+        <canvas
+          id="Assign5"
+          style="border: none"
+          width="450"
+          height="450"
+        ></canvas> 
+        <br><br>
+        <b>Shading Mode:</b>
+        <br><br>
+        <button id="Fong">Phong</button>
+        <button id="FongShad">Phong + Shadow</button>
+        <button id="FongRef">Phong + Reflection</button>
+        <br><br>
+        <button id="FongShadRef">Phong + Shadow + Reflection</button>
+        <br><br>
+        Move Light: <input type="range" id="Light" name="Move Light" min="-25" max="25" value="-1.2" step= "0.2" style="width: 250px; height: 6px;">
+        <br><br>
+        Bounce Limit: <input type="range" id="Bounce" name="Bounce Limit" min="1" max="5" value="1" step= "1" style="width: 250px; height: 6px;">
+        <br><br>
+      </div>
+    </div>
+  </body>
+</html>
